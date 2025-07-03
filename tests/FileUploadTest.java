@@ -1,0 +1,52 @@
+package Tests;
+
+
+import org.openqa.selenium.WebDriver;  // Browser control
+import org.openqa.selenium.firefox.FirefoxDriver;  // Firefox implementation
+import org.testng.annotations.*;  // TestNG annotations
+import Pages.FileUploadPage;  // Our Page Object class
+
+import static org.testng.Assert.*;  // Assertion methods for validation
+
+public class FileUploadTest {
+    WebDriver driver;  // Manages browser interactions
+    FileUploadPage uploadPage;  // Page Object to encapsulate page behavior
+
+    @BeforeClass
+    public void setup() {
+        // Initialize FirefoxDriver (Selenium 4 autohandles geckodriver)
+        driver = new FirefoxDriver();
+        driver.manage().window().maximize();  // Maximize window for stable interaction
+
+        // Instantiate page object and navigate to the demo page
+        uploadPage = new FileUploadPage(driver);
+        uploadPage.goToPage();
+    }
+
+    @Test
+    public void uploadFileTest() {
+        // Print the demo page's title to console
+        System.out.println("Page Title: " + uploadPage.getTitle());
+
+        // Perform the upload: provide path relative to project root
+        uploadPage.uploadFile("src\\test\\resources\\image.file");
+        // Submit the upload action
+        uploadPage.submitUpload();
+
+        // Capture and print the success/failure text from the page
+        String result = uploadPage.getResultText();
+        System.out.println("Upload result: " + result);
+
+        // Confirm the result indicates a successful upload
+        assertTrue(result.toLowerCase().contains("uploaded"), "Expected upload confirmation");
+    }
+
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            // Close browser and end session
+            driver.quit();
+        }
+    }
+}
+
