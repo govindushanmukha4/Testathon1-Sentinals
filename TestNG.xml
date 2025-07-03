@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="classes" name="Suite" thread-count="4">
+  <test name="Test">
+    <classes>
+      <class name="tests.HomePageTest"/>
+      <class name="tests.AboutUsPageTest"/>
+      <class name="tests.CookiesPageTest"/>
+      <class name="tests.TablesPageTest"/>
+      <class name="tests.SlidersPageTest"/>
+      <class name="tests.PaginationPageTest"/>
+      <class name="tests.DragDropPageTest"/>
+      <class name="tests.MouseEventsPageTest"/>
+      <class name="tests.KeyBoardEventsPageTest"/>
+      <class name="tests.TabsPageTest"/>
+      <class name="tests.TargetPracticePageTest"/>
+      <class name="tests.SelectsPageTest"/>
+      <class name="tests.ToDoListPageTest"/>
+      <class name="tests.LoginFormPageTest"/>
+      <class name="tests.SimpleFormPageTest"/>
+      <class name="tests.LoginPopupPageTest"/>
+      <class name="tests.AlertsPageTest"/>
+      <class name="tests.DynamicControlsPageTest"/>
+      <class name="tests.FileUploadPageTest"/>
+      <class name="tests.SimplePaymentPageTest"/>
+      <class name="tests.JobApplicationPageTest"/>
+      <class name="tests.CateringServicePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
