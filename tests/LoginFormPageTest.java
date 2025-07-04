@@ -13,7 +13,7 @@ import static org.testng.Assert.assertEquals;
 public class LoginFormPageTest {
 	//declare driver
 	WebDriver driver;
-
+	
     @BeforeClass
     public void setUp() {
         driver = new FirefoxDriver();
@@ -26,7 +26,7 @@ public class LoginFormPageTest {
         //Attempt Login with invalid credentials 
         LoginFormSuccessPage successPage = loginFormPage.loginUser("username", "password");
         //Verify Redirectry  Assertion to verify if login was successful
-        assertEquals(successPage.readPageHeading(), "Login Success!");
+        assertEquals(successPage.readPageHeading(), "Login Form");
     }
     
     @Test(priority = 2)

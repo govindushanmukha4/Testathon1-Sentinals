@@ -1,6 +1,5 @@
 package tests;
 
-
 import org.openqa.selenium.WebDriver;  // Browser control
 import org.openqa.selenium.firefox.FirefoxDriver;  // Firefox implementation
 import org.testng.annotations.*;  // TestNG annotations
@@ -8,7 +7,7 @@ import pages.FileUploadPage;  // Our Page Object class
 
 import static org.testng.Assert.*;  // Assertion methods for validation
 
-public class FileUploadTest {
+public class FileUploadPageTest {
     WebDriver driver;  // Manages browser interactions
     FileUploadPage uploadPage;  // Page Object to encapsulate page behavior
 
@@ -25,8 +24,6 @@ public class FileUploadTest {
 
     @Test
     public void uploadFileTest() {
-        // Print the demo page's title to console
-        // System.out.println("Page Title: " + uploadPage.getTitle());
 
         // Perform the upload: provide path relative to project root
         uploadPage.uploadFile("src/test/resources/Selenium_Selenese.docx");

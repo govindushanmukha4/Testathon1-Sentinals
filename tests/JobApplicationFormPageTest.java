@@ -25,7 +25,7 @@ public class JobApplicationFormPageTest {
     public void verifyFormSubmittedTest() {
         // Create object for JobApplicationFormPage
     	JobApplicationFormPage jobFormPage = new JobApplicationFormPage(driver);
-    	jobFormPage.fillJobApplication("John", "john@gmail.com", "9876543210", "Full Stack Developer", "src/test/resources/SDLC.docx");
+    	jobFormPage.fillJobApplication("John", "john@gmail.com", "9876543210", "Full Stack Developer", "src/test/resources/Selenium_Selenese.docx");
     	
         // Verify redirect
         assertEquals(jobFormPage.getMessage(), "Application Submitted Successfully!");

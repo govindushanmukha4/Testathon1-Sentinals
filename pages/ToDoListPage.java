@@ -1,12 +1,9 @@
 package pages;
 import java.time.Duration;
-
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 //Page Object Model class for the To-Do List web page
 public class ToDoListPage {
 	WebDriver driver;
@@ -38,11 +35,9 @@ public class ToDoListPage {
     public boolean markThirdTaskComplete() {
         // XPath to locate the checkbox of the third list item
         By thirdCheckboxBy = By.xpath("//ul[contains(@class, 'mt-5')]/li[3]//input[@type='checkbox']");
-        
         // Wait until the checkbox is clickable, then click it
         WebElement thirdCheckbox = wait.until(ExpectedConditions.elementToBeClickable(thirdCheckboxBy));
         thirdCheckbox.click();
-
         // Return whether the checkbox is now selected (marked complete)
         return thirdCheckbox.isSelected();
     }
@@ -60,6 +55,14 @@ public class ToDoListPage {
         // Wait until the button is clickable, then click to remove the task
         wait.until(ExpectedConditions.elementToBeClickable(thirdRemoveButton)).click();
     }
-
-
 }
+
+
+
+
+
+
+
+
+
+

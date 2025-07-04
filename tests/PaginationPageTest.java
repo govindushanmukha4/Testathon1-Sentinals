@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import Pages.paginationPage;
+import pages.paginationPage;
 
 import java.time.Duration;
 

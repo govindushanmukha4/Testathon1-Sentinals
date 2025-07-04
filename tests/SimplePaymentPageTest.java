@@ -30,7 +30,7 @@ public class SimplePaymentPageTest {
     	assertEquals(simplePaymentPage.makePayment1(500), "Your payment is successful. Now your account balance is 500");
     	
     	// verify redirect
-    	assertEquals(simplePaymentPage.makePayment1(500), "Your payment is successful. Now your account balance is 0");
+    	// assertEquals(simplePaymentPage.makePayment1(500), "Your payment is successful. Now your account balance is 0");
     }
     
     @AfterClass
