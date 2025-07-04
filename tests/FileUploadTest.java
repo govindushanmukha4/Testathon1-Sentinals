@@ -33,7 +33,6 @@ public class FileUploadTest {
 
         // Capture and print the success/failure text from the page
         String result = uploadPage.getResultText();
-        System.out.println("Upload result: " + result);
 
         // Confirm the result indicates a successful upload
         assertTrue(result.toLowerCase().contains("uploaded"), "Expected upload confirmation");
