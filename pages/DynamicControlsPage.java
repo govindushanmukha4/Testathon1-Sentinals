@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.WebDriver;                      // WebDriver for browser automation
 import org.openqa.selenium.WebElement;                     // Represents page elements
