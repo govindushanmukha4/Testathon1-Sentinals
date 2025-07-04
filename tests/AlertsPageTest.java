@@ -1,9 +1,9 @@
-package Tests;
+package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
-import Pages.AlertsPage;
+import pages.AlertsPage;
 
 import static org.testng.Assert.*;
 
