@@ -1,4 +1,4 @@
-package Tests; 
+package tests; 
 
 
 import org.openqa.selenium.By;              // For locating elements (e.g., input field)
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;        // Core WebDriver interface
 import org.openqa.selenium.firefox.FirefoxDriver;  // Firefox browser driver
 import org.testng.annotations.*;            // TestNG annotations: @BeforeClass, @Test, @AfterClass
 
-import Pages.DynamicControlsPage;           // Page Object encapsulating page interactions
+import pages.DynamicControlsPage;           // Page Object encapsulating page interactions
 
 import static org.testng.Assert.*;          // Static import of assertion methods
 
