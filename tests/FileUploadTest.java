@@ -25,11 +25,9 @@ public class FileUploadTest {
 
     @Test
     public void uploadFileTest() {
-        // Print the demo page's title to console
-        System.out.println("Page Title: " + uploadPage.getTitle());
 
         // Perform the upload: provide path relative to project root
-        uploadPage.uploadFile("src\\test\\resources\\image.file");
+        uploadPage.uploadFile("src/test/resources/Selenium_Selenese.docx");
         // Submit the upload action
         uploadPage.submitUpload();
 
