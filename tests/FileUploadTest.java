@@ -1,10 +1,10 @@
-package Tests;
+package tests;
 
 
 import org.openqa.selenium.WebDriver;  // Browser control
 import org.openqa.selenium.firefox.FirefoxDriver;  // Firefox implementation
 import org.testng.annotations.*;  // TestNG annotations
-import Pages.FileUploadPage;  // Our Page Object class
+import pages.FileUploadPage;  // Our Page Object class
 
 import static org.testng.Assert.*;  // Assertion methods for validation
 
