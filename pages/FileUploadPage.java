@@ -1,19 +1,18 @@
 package pages;
 
-import java.io.File;                                      // For handling file paths
+import java.io.File;                                      
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;                    // Selenium WebDriver interface
-import org.openqa.selenium.WebElement;                   // Represents elements on a web page
-import org.openqa.selenium.support.FindBy;              // Annotation for locating WebElements
-import org.openqa.selenium.support.PageFactory;         // Initializes @FindBy annotated elements
-import org.openqa.selenium.support.ui.ExpectedConditions; // For explicit wait conditions
-import org.openqa.selenium.support.ui.WebDriverWait;    // Supports explicit waits
-import java.time.Duration;                              // Used to specify wait duration
-
+import org.openqa.selenium.WebDriver;                    
+import org.openqa.selenium.WebElement;                   
+import org.openqa.selenium.support.FindBy;            
+import org.openqa.selenium.support.PageFactory;         
+import org.openqa.selenium.support.ui.ExpectedConditions; 
+import org.openqa.selenium.support.ui.WebDriverWait;   
+import java.time.Duration;                              
 public class FileUploadPage {
-    private WebDriver driver;                            // Browser automation tool
-    private WebDriverWait wait;                          // For synchronizing actions
+    private WebDriver driver;                           
+    private WebDriverWait wait;                          
 
     // Locate the file input element for uploads
     @FindBy(id = "file")
