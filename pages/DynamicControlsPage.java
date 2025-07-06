@@ -1,13 +1,12 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;                      // WebDriver for browser automation
-import org.openqa.selenium.WebElement;                     // Represents page elements
-import org.openqa.selenium.support.FindBy;                // Annotation for locating elements
-import org.openqa.selenium.support.PageFactory;           // Initializes @FindBy annotations
-import org.openqa.selenium.support.ui.ExpectedConditions; // For explicit waits
-import org.openqa.selenium.support.ui.WebDriverWait;      // Supports explicit waits
-import java.time.Duration;                                // Used to set wait durations
-
+import org.openqa.selenium.WebDriver;                      
+import org.openqa.selenium.WebElement;                     
+import org.openqa.selenium.support.FindBy;                
+import org.openqa.selenium.support.PageFactory;           
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;      
+import java.time.Duration;                                
 public class DynamicControlsPage {
     private WebDriver driver;                              // WebDriver instance for browser interactions
     private WebDriverWait wait;                            // Used for explicit waiting on conditions
